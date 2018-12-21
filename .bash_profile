@@ -86,7 +86,8 @@ function parse_git_branch() {
 #symbol="👉🏻  "
 #symbol="💥  "
 #symbol="🔥  "
-symbol="🚀  "
+#symbol="🚀  "
+symbol="📣  "
 
 export PS1="\[${MAGENTA}\]\u@\h \[$RESET\]in \[$GREEN\]\w\[$RESET\]\$([[ -n \$(git branch 2> /dev/null) ]] && echo \" on \")\[$PURPLE\]\$(parse_git_branch)\[$RESET\]\n$symbol\[$RESET\]"
 export PS2="\[$ORANGE\]→ \[$RESET\]"
